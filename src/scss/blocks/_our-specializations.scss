@@ -1,0 +1,129 @@
+.our-specializations {
+    margin-top: 70px;
+    padding-bottom: 80px;
+    &__title {
+        font-size: 50px;
+        line-height: 83px;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 600px;
+        margin-bottom: 50px;
+    }
+    &__block {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 30px;
+    }
+    &__card {
+        transition: all 0.2s ease-in;
+        background: $back-color;
+        border-radius: 10px;
+        padding: 25px 22px;
+        &:hover {
+            transform: scale(1.05);
+        }
+        &-image {
+            margin-bottom: 55px;
+        }
+        &-title {
+            margin-bottom: 10px;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &-description {
+            margin-bottom: 50px;
+            font-size: 16px;
+            line-height: 28px;
+        }
+        &-read {
+            a {
+                display: flex;
+                margin-bottom: 20px;
+                max-width: 115px
+            }
+            &-more {
+                @include div-description;
+                margin-right: 20px;
+                color: #A1C5E9;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .our-specializations {
+        &__title {
+            font-size: 45px;
+            line-height: 62px;
+        }
+        &__card {
+            &-title {
+                font-size: 28px;
+                line-height: 42px;
+                margin-bottom: 5px;
+            }
+            &-description {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .our-specializations {
+        &__block {
+            grid-gap: 15px;
+        }
+        &__card {
+            #invalid-title {
+                margin-bottom: 32px;
+            }
+            a {
+                margin-bottom: 0px;
+            }
+            padding: 15px 12px;
+            &-image {
+                margin-bottom: 22px;
+            }
+            &-title {
+                font-size: 24px;
+                line-height: 32px;
+                max-width: 130px;
+            }
+            &-description {
+                line-height: 18px;
+                margin-bottom: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width:520px) {
+    .our-specializations {
+        &__block {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 31px
+        }
+        &__card {
+            margin: 0 auto;
+            &-description {
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+@media (max-width:420px) {
+    .our-specializations {
+        &__title {
+            font-size: 35px;
+            line-height: 42px;
+        }
+    }
+}

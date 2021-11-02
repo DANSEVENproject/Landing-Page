@@ -1,0 +1,88 @@
+.header {
+    margin-top: 58px;
+    .container {
+        animation: backInLeft;
+        animation-duration: 2s;
+        &__background {
+            background: url('../img/header/background-office.jpg') no-repeat;
+            border-radius: 20px;
+            background-size: 1110px, 650px;
+        }
+    }
+    &__block {
+        padding-top: 207px;
+        padding-left: 363px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        @include div-title;
+        font-size: 61px;
+        line-height: 92px;
+        animation: backInLeft;
+        animation-duration: 2s;
+    }
+    &__description {
+        margin-top: 20px;
+        max-width: 735px;
+        @include div-description;
+        font-size: 20px;
+        line-height: 38px;
+        animation: backInLeft;
+        animation-duration: 2s;
+    }
+    &__button {
+        margin-top: 40px;
+        margin-bottom: 70px;
+        animation: backInLeft;
+        animation-duration: 2s;
+    }
+}
+
+@media (max-width:1200px) {
+    .header {
+        &__title {
+            font-size: 45px;
+            line-height: 62px;
+        }
+        &__description {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &__button {
+            font-size: 16px;
+            line-height: 23px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .header {
+        &__block {
+            padding: 50px 10px;
+            margin: 0 auto;
+        }
+        &__title {
+            color: $back-color;
+        }
+        &__description {
+            color: $back-color;
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+}
+
+@media (max-width:420px) {
+    .header {
+        &__title {
+            font-size: 35px;
+            line-height: 42px;
+        }
+        &__description {
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+}

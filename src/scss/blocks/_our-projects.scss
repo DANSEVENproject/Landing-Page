@@ -1,0 +1,108 @@
+    .our-projects {
+        margin-top: 70px;
+        padding-bottom: 80px;
+        &__block {
+            &-title {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 50px;
+                &__name {
+                    font-size: 50px;
+                    line-height: 70px;
+                }
+                &__view {
+                    display: flex;
+                    align-items: flex-end;
+                    a {
+                        display: flex;
+                        align-items: flex-end;
+                    }
+                    &-text {
+                        @include div-description;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #A1C5E9;
+                        margin-right: 20px;
+                    }
+                }
+            }
+            &-card {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-gap: 30px;
+                a {
+                    animation: none;
+                    text-decoration: none;
+                }
+                & img {
+                    transition: all 0.2s ease-in;
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    
+    @media (max-width:1200px) {
+        .our-projects {
+            &__block {
+                &-card {
+                    & img {
+                        height: auto;
+                    }
+                }
+                &-title {
+                    &__name {
+                        font-size: 45px;
+                        line-height: 62px;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width:600px) {
+        .our-projects {
+            &__block {
+                &-card {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr;
+                    grid-gap: 30px;
+                    & a {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width:500px) {
+        .our-projects {
+            &__block {
+                &-title {
+                    display: block;
+                    &__view {
+                        justify-content: flex-end;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width:420px) {
+        .our-projects {
+            &__block {
+                &-title {
+                    &__name {
+                        font-size: 35px;
+                        line-height: 42px;
+                    }
+                }
+            }
+        }
+    }

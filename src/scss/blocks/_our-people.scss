@@ -1,0 +1,260 @@
+.our-people {
+    margin-top: 70px;
+    padding-bottom: 80px;
+    &__title {
+        font-size: 50px;
+        line-height: 75px;
+        text-align: center;
+    }
+    &__block {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        &-1 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 42.5px;
+            .our-people__card {
+                display: flex;
+                &-text {
+                    max-width: 247px;
+                    margin-right: 11px;
+                    text-align: right;
+                }
+                &-title {
+                    font-size: 18px;
+                    line-height: 27px;
+                    margin-bottom: 10px;
+                }
+                &-description {
+                    font-size: 14px;
+                    line-height: 26px;
+                    min-width: 107px;
+                }
+                &:nth-child(1) {
+                    margin-right: 12px;
+                    margin-bottom: 25px;
+                    .our-people__card-text {
+                        margin-top: 252px;
+                    }
+                    & img {
+                        border-radius: 105px 0px 0px 0px;
+                    }
+                }
+                &:nth-child(2) {
+                    margin-right: 12px;
+                    .our-people__card-text {
+                        margin-top: 183px;
+                        text-align: right;
+                    }
+                    & img {
+                        border-radius: 0px 0px 0px 105px;
+                    }
+                }
+            }
+        }
+        &-2 {
+            display: flex;
+            flex-direction: column;
+            .our-people__card {
+                display: flex;
+                &-title {
+                    font-size: 18px;
+                    line-height: 27px;
+                    margin-bottom: 10px;
+                }
+                &-description {
+                    font-size: 14px;
+                    line-height: 26px;
+                }
+                &-text {
+                    max-width: 247px;
+                    margin-left: 11px;
+                    text-align: left;
+                }
+                &:nth-child(1) {
+                    margin-left: 12px;
+                    margin-top: 68px;
+                    margin-bottom: 40px;
+                    .our-people__card-text {
+                        margin-top: 252px;
+                    }
+                    & img {
+                        border-radius: 0px 105px 0px 0px;
+                    }
+                }
+                &:nth-child(2) {
+                    margin-right: 35px;
+                    margin-left: 17px;
+                    .our-people__card-text {
+                        margin-top: 183px;
+                    }
+                    & img {
+                        border-radius: 0px 0px 105px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .our-people {
+        &__card {
+            &-title {
+                font-size: 28px;
+                line-height: 42px;
+            }
+            &-description {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:910px) {
+    .our-people {
+        &__card {
+            &-image {
+                height: 291px;
+                width: 230px;
+            }
+        }
+        &__block {
+            &-1 {
+                .our-people__card {
+                    &:nth-child(1) {
+                        .our-people__card-text {
+                            margin-top: 183px;
+                        }
+                    }
+                    &:nth-child(2) {
+                        .our-people__card-text {
+                            margin-top: 183px;
+                        }
+                    }
+                }
+            }
+            &-2 {
+                .our-people__card {
+                    &:nth-child(1) {
+                        .our-people__card-text {
+                            margin-top: 183px;
+                        }
+                    }
+                    &:nth-child(2) {
+                        .our-people__card-text {
+                            margin-top: 183px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .our-people {
+        &__card {
+            &-image {
+                height: 357px;
+                width: 282px;
+            }
+            &-title {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            &-description {
+                line-height: 18px;
+                margin-bottom: 22px;
+            }
+        }
+        &__block {
+            display: flex;
+            flex-wrap: wrap;
+            &-1 {
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width:420px) {
+    .our-people {
+        &__card {
+            flex-direction: column;
+            &-description {
+                margin-bottom: 12px;
+            }
+        }
+        &__block {
+            &-1 {
+                .our-people__card {
+                    &:nth-child(1) {
+                        margin-bottom: 30px;
+                        margin-top: 0px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                        .our-people__card-text {
+                            margin-top: 0px;
+                            margin-right: 0px;
+                            margin-left: 0px;
+                            text-align: left;
+                        }
+                    }
+                    &:nth-child(2) {
+                        margin-bottom: 30px;
+                        margin-top: 0px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                        .our-people__card-text {
+                            margin-top: 0px;
+                            margin-right: 0px;
+                            margin-left: 0px;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+            &-2 {
+                .our-people__card {
+                    &:nth-child(1) {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 30px;
+                        margin-top: 0px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                        .our-people__card-text {
+                            order: 1;
+                            margin-top: 20px;
+                            margin-right: 0px;
+                            margin-left: 0px;
+                        }
+                        & img {
+                            order: 2;
+                        }
+                    }
+                    &:nth-child(2) {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 30px;
+                        margin-top: 0px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                        .our-people__card-text {
+                            order: 1;
+                            margin-top: 20px;
+                            margin-right: 0px;
+                            margin-left: 0px;
+                        }
+                        & img {
+                            order: 2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
