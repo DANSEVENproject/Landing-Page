@@ -5,12 +5,10 @@
         font-size: 50px;
         line-height: 70px;
         margin-bottom: 41px;
-        max-width: 332px;
     }
     &__block {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
         grid-gap: 31px
     }
     &__card {
@@ -74,7 +72,6 @@
         &__block {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
             grid-gap: 31px
         }
     }

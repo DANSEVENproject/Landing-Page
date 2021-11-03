@@ -36,6 +36,7 @@
                     }
                 }
                 button {
+                    cursor: pointer;
                     border: none;
                     font-size: 0px;
                     background: $text-color;
@@ -64,8 +65,8 @@
                 display: flex;
                 margin-bottom: 20px;
                 a {
-                    animation: none;
-                    text-decoration: none;
+                    padding-top: 0px;
+                    border: none;
                 }
                 &-text {
                     display: flex;
@@ -112,6 +113,7 @@
 
 li.slick-active {
     button {
+        cursor: default;
         &#slick-slide-control00 {
             background: $text-color;
         }
@@ -225,6 +227,11 @@ li.slick-active {
         &__title {
             font-size: 35px;
             line-height: 42px;
+            text-align: center;
+        }
+        &__description {
+            max-width: 331px;
+            text-align: center;
         }
     }
 }

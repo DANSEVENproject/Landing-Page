@@ -64,9 +64,10 @@
             margin: 0 auto;
         }
         &__title {
-            color: $back-color;
+            color: $button-color;
         }
         &__description {
+            max-width: 500px;
             color: $back-color;
             font-size: 20px;
             line-height: 28px;

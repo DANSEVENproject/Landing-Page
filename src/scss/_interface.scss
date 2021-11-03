@@ -81,24 +81,23 @@ img {
 }
 
 @media (min-width: 768px) {
+    a:hover {
+        padding-top: 3px;
+        border-bottom: 1px solid $text-color;
+    }
     .button {
         &:hover {
             background-color: lighten($button-color, 10%);
             cursor: pointer;
-            a {
-                animation: none;
-                text-decoration: none;
+            a:hover {
+                padding-top: 0px;
+                border: none;
             }
         }
     }
     .arrow {
         color: lighten($button-color, 10%);
         cursor: pointer;
-    }
-    a:hover {
-        animation: fadeIn;
-        animation-duration: 1s;
-        text-decoration: underline;
     }
 }
 

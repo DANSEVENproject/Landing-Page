@@ -28,12 +28,11 @@
             }
             &-card {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
+                grid-template-columns: repeat(2, 1fr);
                 grid-gap: 30px;
                 a {
-                    animation: none;
-                    text-decoration: none;
+                    padding-top: 0px;
+                    border: none;
                 }
                 & img {
                     transition: all 0.2s ease-in;
@@ -70,7 +69,6 @@
                 &-card {
                     display: grid;
                     grid-template-columns: 1fr;
-                    grid-template-rows: 1fr;
                     grid-gap: 30px;
                     & a {
                         margin: 0 auto;
